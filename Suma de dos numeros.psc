@@ -4,6 +4,7 @@ Algoritmo Suma
 	
 	Definir numberone Como Entero
 	definir numbertwo Como Entero
+	definir nuberthree Como Entero
 	Definir result Como Entero
 	
 	Imprimir "Ingrese el primer número"
@@ -12,6 +13,9 @@ Algoritmo Suma
 	Imprimir "Ingrese el segundo número "
 	Leer numbertwo
 	
-	result= numberone + numbertwo
+	Imprimir "Ingrese el tercer numero"
+	Leer numberthree
+	
+	result= numberone + numbertwo + numberthree
 	Imprimir " El resultado es " , result
 FinAlgoritmo
