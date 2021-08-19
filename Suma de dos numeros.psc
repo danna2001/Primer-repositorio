@@ -4,7 +4,7 @@ Algoritmo Suma
 	
 	Definir numberone Como Entero
 	definir numbertwo Como Entero
-	definir nuberthree Como Entero
+	definir numberthree Como Entero
 	Definir result Como Entero
 	
 	Imprimir "Ingrese el primer número"
