@@ -1,6 +1,6 @@
 Algoritmo Suma
 	imprimir "Bienvenido"
-	Imprimir "Este programa suma dos números"
+	Imprimir "Este programa suma tres números"
 	
 	Definir numberone Como Entero
 	definir numbertwo Como Entero
