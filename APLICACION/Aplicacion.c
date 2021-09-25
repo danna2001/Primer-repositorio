@@ -11,13 +11,25 @@ printf ("¿Que deseas jugar?\n");
         printf( "\n   2.Sopa de letras ");
         printf( "\n   3. " );
         printf( "\n   4. Salir." );
-    
 }
+
+void menuTwo(){
+printf("\n\n 1. Volver a jugar");
+      printf("\n2. Volver al menu");
+}
+
+
 int requestAnswer(char* answerEntered){
     printf( "\n\n   Introduzca una opcion (1-4): " );
     int option;
     scanf("%d", &option);
     return option;
+}
+int requestAnswerTwo(char* answerEnteredTwo){
+    printf( "\n\n   Introduzca una opcion (1-2): " );
+    int optionTwo;
+    scanf("%d", &optionTwo);
+    return optionTwo;
 }
 
 
@@ -41,11 +53,21 @@ else if (randomNumber > answer){
 printf("\n Error, pero te doy una pista: el numero que elegi es mayor que %d\n",answer);}
 else  {
       printf("Correcto. El numero que seleccione fue %d\n",answer);
+      printf ("Felictaciones,has ganado el juego");
+      menuTwo();
+    int optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
+    if (optionEnteredTwo==1){guessNumber();}
+    if (optionEnteredTwo==2) {menu();}
       break; }
 if (i >= maximumAttempts) {
-      printf("Perdiste. El numero que seleccione fue %d",randomNumber);
+      printf("Perdiste. El numero que seleccione fue %d\n",randomNumber);
+      printf("Lo siento mucho");
+      menuTwo();
+    int optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
+    if (optionEnteredTwo==1){guessNumber();}
+    if (optionEnteredTwo==2) {menu();}
       break;}
-      }
+      }}
     
    
 void alphabetSoup(){
@@ -179,23 +201,30 @@ do{
     if (optionEnteredThree==1){alphabetSoup();}
     if (optionEnteredThree==2) {menu();}
     }
-
 }
+
 
 int main(){
     printf("Bienvenido\n");
+    int i=0 ;
     menu();
+    while(1){
+    i++;
+    
     int optionEntered= requestAnswer("Respuesta del usuario");
 
-if (optionEntered==1){
-    guessNumber();}
-
-if (optionEntered==2){alphabetSoup();}
-if (optionEntered==4) {exit(0);}  
+    if (optionEntered==1){
+    guessNumber();
+    } 
+    if (optionEntered==2){alphabetSoup();}
+    
+    if (optionEntered==4) {exit(0);}
+    }
+  
+ 
 
 return 0;
 }
-
 
 
 
