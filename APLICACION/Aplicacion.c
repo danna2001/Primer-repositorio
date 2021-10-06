@@ -11,16 +11,14 @@
 
 int main(){
     printf("\nBienvenido\n");
-    int i=0 ;
+   
     menu();
     
     while(1){
     
     int optionEntered= requestAnswer("Respuesta del usuario");
 
-    if (optionEntered==1){
-    guessNumber();
-    } 
+    if (optionEntered==1){guessNumber();} 
     if (optionEntered==2){alphabetSoup();}
     if (optionEntered==3){guessWord();}
     if (optionEntered==4) {exit(0);}
