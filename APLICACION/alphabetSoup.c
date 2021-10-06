@@ -10,7 +10,7 @@ printf("Elige que tema deseas jugar");
 printf( "\n\n   Introduzca una opcion (1-3): " );
 
     int theme,points,opportunities;
-    
+    int optionEnteredThree;
     scanf("%d", &theme);
     if (theme==1){
         char fruits[20];
@@ -67,7 +67,7 @@ do{
     printf("Juego terminado!\n");
     printf("\nTus puntos: %d\n", points);
     menuTwo();
-    int optionEnteredThree= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredThree= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredThree==1){alphabetSoup();}
     if (optionEnteredThree==2) {menu();}
     }
@@ -126,7 +126,7 @@ do{
     printf("Juego acabado!\n");
     printf("\nTus puntos: %d\n", points);
     menuTwo();
-    int optionEnteredThree= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredThree= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredThree==1){alphabetSoup();}
     if (optionEnteredThree==2) {menu();}
     }
