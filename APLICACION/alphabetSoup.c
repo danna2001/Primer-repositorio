@@ -1,7 +1,6 @@
 
 void alphabetSoup(){
 
-
 printf("\nSOPA DE LETRAS\n\n");
 printf("Elige que tema deseas jugar");
     printf("\n\n1. Frutas");
