@@ -2,7 +2,7 @@
 char word[60];
 char wordDisplayed[60];
 int lives;
-
+int optionEnteredFour;
 
 void guessWord(){
 
@@ -45,13 +45,13 @@ system("cls");
             printf("\n\nFelicitaciones adivinaste la palabra\n");
             
             menuTwo();
-    int optionEnteredFour= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredFour= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredFour==1){guessWord();}
     if (optionEnteredFour==2) {menu();}
     break;}
             if(lives==0){printf("\n Perdiste, la palabra era %s",word);
             menuTwo();
-    int optionEnteredFour= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredFour= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredFour==1){guessWord();}
     if (optionEnteredFour==2) {menu();}
     break;}
