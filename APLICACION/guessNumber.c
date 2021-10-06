@@ -7,6 +7,7 @@ int answer;
 int maximumAttempts=3;
 int i=0;
 int question;
+int optionEnteredTwo;
 printf("\nHola");
 printf("\nHe seleccionado un numero al azar entre 0 y 10, tu tarea es adivinarlo en 3 intentos");
 while(1){
@@ -21,7 +22,7 @@ else  {
       printf("Correcto. El numero que seleccione fue %d\n",answer);
      printf ("Felictaciones,has ganado el juego");
      menuTwo();
-    int optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredTwo==1){guessNumber();}
     if (optionEnteredTwo==2) {menu();}
       break; }
@@ -29,7 +30,7 @@ if (i >= maximumAttempts) {
       printf("\nPerdiste. El numero que seleccione fue %d\n",randomNumber);
       printf("Lo siento mucho\n");
       menuTwo();
-    int optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
+    optionEnteredTwo= requestAnswerTwo("Respuesta dos del usuario");
     if (optionEnteredTwo==1){guessNumber();}
     if (optionEnteredTwo==2) {menu();}
        break;}
